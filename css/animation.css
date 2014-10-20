@@ -41,3 +41,41 @@ body {
 	93.75% { background-color: #DDDDDD; }
 	100% { background-color: #001F3F; }
 }
+
+@keyframes rainbow-complement {
+	6.25% { color: #FF8B26; }
+	12.5% { color: #802400; }
+	18.75% { color: #C63333; }
+	25% { color: #32668F; }
+	31.25% { color: #D133BF; }
+	37.5% { color: #FE008F; }
+	43.75% { color: #0023FF; }
+	50% { color: #007AE4; }
+	56.25% { color: #00BEC9; }
+	62.5% { color: #7AEBB4; }
+	68.75% { color: #0FED41; }
+	75% { color: #4EF236; }
+	81.25% { color: #EEEEEE; }
+	87.5% { color: #555555; }
+	93.75% { color: #222222; }
+	100% { color: #FFE0C0; }
+}
+
+@-webkit-keyframes rainbow-complement {
+	6.25% { color: #FF8B26; }
+	12.5% { color: #802400; }
+	18.75% { color: #C63333; }
+	25% { color: #32668F; }
+	31.25% { color: #D133BF; }
+	37.5% { color: #FE008F; }
+	43.75% { color: #0023FF; }
+	50% { color: #007AE4; }
+	56.25% { color: #00BEC9; }
+	62.5% { color: #7AEBB4; }
+	68.75% { color: #0FED41; }
+	75% { color: #4EF236; }
+	81.25% { color: #EEEEEE; }
+	87.5% { color: #555555; }
+	93.75% { color: #222222; }
+	100% { color: #FFE0C0; }
+}

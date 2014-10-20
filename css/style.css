@@ -25,6 +25,18 @@ body {
 	font-size: 1.2em;
 }
 
+.welcome-text p a {
+	border-bottom: 1px dotted #fff;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+}
+
+.welcome-text p a:hover {
+	color: #999;
+	border-color: #999;
+}
+
 .icons {
 	font-size: 2em;
 }
@@ -36,4 +48,8 @@ body {
 .icons a {
 	text-decoration: none;
 	color: #fff;
+}
+
+.icons a:hover {
+	color: #999;
 }
