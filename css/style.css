@@ -1,0 +1,33 @@
+body {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.name {
+	font-family: 'Josefin Slab', serif;
+	font-size: 5em;
+	letter-spacing: -0.05em;
+	margin-top: 1em;
+}
+
+.welcome-text {
+	width: 80%;
+	margin: 3em auto;
+}
+
+.welcome-text p {
+	font-family: 'Lato';
+	font-size: 1.2em;
+}
+
+.icons {
+	font-size: 2em;
+}
+
+.icons i {
+	margin: 0 0.5em;
+}
