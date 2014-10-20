@@ -5,6 +5,7 @@ body {
 	bottom: 0;
 	right: 0;
 	left: 0;
+	color: #fff;
 }
 
 .name {
@@ -30,4 +31,9 @@ body {
 
 .icons i {
 	margin: 0 0.5em;
+}
+
+.icons a {
+	text-decoration: none;
+	color: #fff;
 }
