@@ -134,6 +134,8 @@ a {
 	height: 105vh;
 	background-color: #ccc; 
 	position: relative;
+	z-index: 500;
+	box-shadow: 0px 0px 5px #333;
 }
 
 #mission .pos-fix {
