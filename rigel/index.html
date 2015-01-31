@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="rose">
+
+<head>
+	
+	<title>ROSE</title>
+	
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/firebase.js"></script>
+	<script type="text/javascript" src="lib/angularfire.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body ng-controller="mainCtrl">
+
+	<h1>{{ firebaseData.value }}</h1>
+
+</body>
+
+
+</html>
