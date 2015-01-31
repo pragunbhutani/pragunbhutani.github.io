@@ -17,7 +17,31 @@
 
 <body ng-controller="mainCtrl">
 
-	<h1>{{ firebaseData.value }}</h1>
+	<div style="margin-top: 50px; border: 1px solid black;">
+		<h1>SENSOR</h1>
+		<h1 ng-show="firebaseData.sensor.state">State: ON</h1>
+		<h1 ng-show="!firebaseData.sensor.state">State: OFF</h1>
+		<h1>Sensor Value: {{ firebaseData.sensor.value }}</h1>
+
+		<button ng-click="toggleSensor()">Toggle Sensor</button>
+	</div>
+
+	<div style="margin-top: 50px; border: 1px solid black;">
+		<h1>LED</h1>
+		<h1 ng-show="firebaseData.led.state">State: ON</h1>
+		<h1 ng-show="!firebaseData.led.state">State: OFF</h1>
+
+		<button ng-click="toggleLed()">Toggle LED</button>
+	</div>
+
+	<div style="margin-top: 50px; border: 1px solid black;">
+		<h1>MOTOR</h1>
+		<h1>State: {{ firebaseData.motor.action }}</h1>
+
+		<button ng-click="controlMotor( 'forward' )">Forward</button>
+		<button ng-click="controlMotor( 'reverse' )">Reverse</button>
+		<button ng-click="controlMotor( 'stop' )">Stop</button>
+	</div>
 
 </body>
 
