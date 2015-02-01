@@ -10,6 +10,10 @@
 	<script type="text/javascript" src="lib/angularfire.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -17,30 +21,70 @@
 
 <body ng-controller="mainCtrl">
 
-	<div style="margin-top: 10px; padding: 10px; border: 1px solid black;">
-		<h1>SENSOR</h1>
-		<h2 ng-show="firebaseData.sensor.state">State: ON</h2>
-		<h2 ng-show="!firebaseData.sensor.state">State: OFF</h2>
-		<h2>Sensor Value: {{ firebaseData.sensor.value }}</h2>
-
-		<button ng-click="toggleSensor()">Toggle Sensor</button>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>CloudLab</h1>
+			<p>Your remotely operated science lab in the cloud.</p>
+		</div>
 	</div>
 
-	<div style="margin-top: 10px; padding: 10px; border: 1px solid black;">
-		<h1>LED</h1>
-		<h2 ng-show="firebaseData.led.state">State: ON</h2>
-		<h2 ng-show="!firebaseData.led.state">State: OFF</h2>
+	<div class="container">
 
-		<button ng-click="toggleLed()">Toggle LED</button>
-	</div>
+		<div class="row">
+			
+			<div class="col-md-4">
+				<h3 class="text-center">Light Intensity</h3>
+				<table class="table table-bordered">
+					<tr>
+						<th>State</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td ng-show="firebaseData.sensor.state">ON</td>
+						<td ng-show="!firebaseData.sensor.state">OFF</td>
+						<td>{{ firebaseData.sensor.value }}</td>
+					</tr>
+				</table>
+				<p class="text-center">
+					<a class="btn btn-default" ng-click="toggleSensor()">Toggle Sensor</a>
+				</p>
+			</div>
 
-	<div style="margin-top: 10px; padding: 10px; border: 1px solid black;">
-		<h1>MOTOR</h1>
-		<h2>State: {{ firebaseData.motor.action }}</h2>
+			<div class="col-md-4">
+				<h3 class="text-center">Light Source</h3>
+				<table class="table table-bordered">
+					<tr>
+						<th>State</th>
+					</tr>
+					<tr>
+						<td ng-show="firebaseData.led.state">ON</td>
+						<td ng-show="!firebaseData.led.state">OFF</td>
+					</tr>
+				</table>
+				<p class="text-center">
+					<a class="btn btn-default" ng-click="toggleLed()">Toggle LED</a>
+				</p>
+			</div>
 
-		<button ng-click="controlMotor( 'forward' )">Forward</button>
-		<button ng-click="controlMotor( 'reverse' )">Reverse</button>
-		<button ng-click="controlMotor( 'stop' )">Stop</button>
+			<div class="col-md-4">
+				<h3 class="text-center">Motion</h3>
+				<table class="table table-bordered">
+					<tr>
+						<th>State</th>
+					</tr>
+					<tr>
+						<td>{{ firebaseData.motor.action }}</td>
+					</tr>
+				</table>
+				<p class="text-center">
+					<a class="btn btn-default" ng-click="controlMotor( 'forward' )">Forward</a>
+					<a class="btn btn-default" ng-click="controlMotor( 'reverse' )">Reverse</a>
+					<a class="btn btn-default" ng-click="controlMotor( 'stop' )">Stop</a>
+				</p>
+			</div>
+
+		</div>
+
 	</div>
 
 </body>
