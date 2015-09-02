@@ -13,6 +13,7 @@ body {
 	font-size: 5em;
 	letter-spacing: -0.05em;
 	margin-top: 1em;
+	text-shadow: 1px 1px #666;
 }
 
 .welcome-text {
@@ -23,6 +24,7 @@ body {
 .welcome-text p {
 	font-family: 'Lato';
 	font-size: 1.2em;
+	text-shadow: 1px 1px #666;
 }
 
 .welcome-text p a {
