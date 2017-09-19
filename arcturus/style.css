@@ -177,7 +177,8 @@ a {
 
 #about .pos-fix h1 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 50px;
+  font-size: 50px;;
+
   font-weight: 400;
   margin: 30px 0;
 }
