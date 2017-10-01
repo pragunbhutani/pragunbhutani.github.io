@@ -1,14 +1,15 @@
 var images = [
   'appetizers.jpg',
   'beer.jpg',
-  'burger.jpg',
-  'champagne.jpg',
+  'blue-house.jpg',
+  'green-tracks.jpg',
+  'hedge-cars.jpg',
+  'mall-fountain.jpg',
+  'night-store.jpg',
   'pizza.jpg',
-  'sunset.jpg',
-  'bottles.jpg',
-  'cheese.jpg',
-  'cocktail.jpg',
-  'smartphone.jpg'
+  'sports-field.jpg',
+  'tuk-tuk.jpg',
+  'veg-vendor.jpg',
 ];
 
 var imagePath = 'img/bg/' + images[ Math.floor( Math.random() * images.length ) ];
