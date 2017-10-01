@@ -7,7 +7,8 @@ body {
 
 .container-fluid {
   position: absolute;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
   background-size: cover;
   z-index: -100;
@@ -41,10 +42,11 @@ body {
 }
 
 .main-ad {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   padding: 10px;
   background-color: rgba(20, 20, 20, 0.6);
-  padding: 12.5vh 150px 0;
+  padding: 12.5vh 150px 20px;
 }
 
 .screens {
