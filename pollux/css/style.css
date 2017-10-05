@@ -86,26 +86,25 @@ body {
   min-height: 100vh;
   padding: 10px;
   background-color: rgba(60, 60, 60, 0.1);
-  padding: 12.5vh 150px 20px;
+  padding: 12.5vh 6vw 20px;
 }
 
 .screens {
-  height: 630px;
+  height: 42vw;
 }
 
 .screens img {
   height: 108%;
-  margin-left: -5%;
-  margin-top: -7%;
+  margin-top: -5%;
 }
 
 .features-cta {
-  padding-right: 0px;
+  margin-top: 10px;
 }
 
-
 .features-cta .features {
-  height: 450px;
+  height: auto;
+  padding: 15% 20px;
   background-color: rgba(20, 20, 20, 0.7);
   margin-bottom: 10px;
   border-radius: 5px;
@@ -118,7 +117,6 @@ body {
 .features-cta .features h1 {
   font-weight: 100;
   color: #DDD;
-  padding: 15% 0 0;
   text-shadow: 0px 0px 5px black, 0px 0px 10px black;
 }
 
@@ -144,7 +142,7 @@ body {
 }
 
 .features-cta .cta {
-  height: 170px;
+  height: auto;
   background-color: rgba(20, 20, 20, 0.7);
   border-radius: 5px;
 }
@@ -154,8 +152,8 @@ body {
 }
 
 .features-cta .cta img {
-  width: 300px;
-  margin: 40px 15px 0;
+  width: 40%;
+  margin: 4% 2.5%;
   border-radius: 12px;
   box-shadow: 0px 0px 4px #999, 0px 0px 8px black;
 }

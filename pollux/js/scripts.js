@@ -18,8 +18,9 @@ $(document).ready(function() {
 
   var pageVariant = Math.floor( Math.random() * 3 );
   var userLang = navigator.language || navigator.userLang;
+  userLang = userLang.indexOf("en" > -1) ? "en" : "fr";
+  console.log(userLang);
 
-  userLang.indexOf('en' > -1) ? userLang = 'en' : userLang = 'fr';
   var variantName = "";
 
   switch (pageVariant) {
