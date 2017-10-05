@@ -17,9 +17,7 @@ $(document).ready(function() {
   $("#bg-container").css("background-image", imagePath);
 
   var pageVariant = Math.floor( Math.random() * 3 );
-  var userLang = navigator.language || navigator.userLang;
-  userLang = userLang.indexOf("en" > -1) ? "en" : "fr";
-  console.log(userLang);
+  var userLang = navigator.languages[0].indexOf("en") > -1 ? "en" : "fr";
 
   var variantName = "";
 
