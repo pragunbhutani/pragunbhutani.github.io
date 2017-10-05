@@ -17,7 +17,7 @@ $(document).ready(function() {
   $("#bg-container").css("background-image", imagePath);
 
   var pageVariant = Math.floor( Math.random() * 3 );
-  var userLang = navigator.languages[0].indexOf("en") > -1 ? "en" : "fr";
+  var userLang = navigator.language.indexOf("en") > -1 ? "en" : "fr";
 
   var variantName = "";
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
       "Rencontre des personnes inspirantes, exprime-toi à travers les lieux que tu découvres "
         + "et permet aux autres de les découvrir à leur tour.",
       "Crée-toi un répertoire de ta villa, en enregistrant les lieux que tu découvres en moins "
-        + "de temps qu’il te faut pour penser « ce lieu a vraiment l’air top».",
+        + "de temps qu’il te faut pour penser «ce lieu a vraiment l’air top».",
       "Découvre de nouveaux lieux de ta ville avec les suggestions de Flanr, élaborées "
         + "spécifiquement pour toi en fonction de tes goûts, ce que tu cherches et les "
         + "tendances du moment !"
