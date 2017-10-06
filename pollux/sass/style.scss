@@ -1,0 +1,108 @@
+@import 'variables';
+
+header {
+  text-align: center;
+
+  .navbar {
+    padding: 0px;
+
+    .logo-container {
+      margin: 0 auto;
+
+      h1 {
+        font-family: $logo-font;
+        font-size: 4rem;
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+}
+
+.background-banner {
+  position: absolute;
+  margin-top: 81px;
+  width: 100%;
+  height: 440px;
+  background-color: #EEE;
+}
+
+.main-content {
+
+  .body-copy {
+    margin-top: 20vh;
+    padding: 0 5vw;
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+    }
+
+    .main-copy-text {
+      margin: 5vh 0 4vh;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      font-family: $body-copy-font;
+      font-weight: 300;
+    }
+
+    form {
+
+      .email-container {
+        text-align: center;
+      }
+
+      input[type="email"] {
+        width: 27.5vw;
+        padding: 10px 1% 5px;
+        border: 0px;
+        border-bottom: 1px solid #999;
+        background-color: rgba(0, 0, 0, 0);
+
+        &::-webkit-input-placeholder {
+          font-family: $body-copy-font;
+          font-weight: 100;
+        }
+
+        &::-moz-placeholder {
+          font-family: $body-copy-font;
+          font-weight: 100;
+        }
+
+        &:-ms-placeholder {
+          font-family: $body-copy-font;
+          font-weight: 100;
+        }
+
+        &:-moz-placeholder {
+          font-family: $body-copy-font;
+          font-weight: 100;
+        }
+      }
+
+      button {
+        margin-left: 10px;
+        padding: 5px 0;
+        font-family: $body-copy-font;
+        background-color: $primary-2;
+        border: 1px solid $primary-1;
+        color: #733313;
+        width: 10.5vw;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $primary-1;
+        }
+      }
+    }
+
+    .name-container {
+      display: none;
+      margin: 20px 0 10px;
+    }
+
+    .email-container {
+      margin: 20px 0 10px;
+    }
+  }
+}

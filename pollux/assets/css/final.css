@@ -1,0 +1,67 @@
+header {
+  text-align: center; }
+  header .navbar {
+    padding: 0px; }
+    header .navbar .logo-container {
+      margin: 0 auto; }
+      header .navbar .logo-container h1 {
+        font-family: "Italiana", sans-serif;
+        font-size: 4rem;
+        margin: 10px 0 0 0; }
+
+.background-banner {
+  position: absolute;
+  margin-top: 81px;
+  width: 100%;
+  height: 440px;
+  background-color: #EEE; }
+
+.main-content .body-copy {
+  margin-top: 20vh;
+  padding: 0 5vw; }
+  .main-content .body-copy h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.5px; }
+  .main-content .body-copy .main-copy-text {
+    margin: 5vh 0 4vh;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  .main-content .body-copy form .email-container {
+    text-align: center; }
+  .main-content .body-copy form input[type="email"] {
+    width: 27.5vw;
+    padding: 10px 1% 5px;
+    border: 0px;
+    border-bottom: 1px solid #999;
+    background-color: transparent; }
+    .main-content .body-copy form input[type="email"]::-webkit-input-placeholder {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+    .main-content .body-copy form input[type="email"]::-moz-placeholder {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+    .main-content .body-copy form input[type="email"]:-ms-placeholder {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+    .main-content .body-copy form input[type="email"]:-moz-placeholder {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+  .main-content .body-copy form button {
+    margin-left: 10px;
+    padding: 5px 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #E6CBA5;
+    border: 1px solid #E6B39A;
+    color: #733313;
+    width: 10.5vw; }
+    .main-content .body-copy form button:hover {
+      cursor: pointer;
+      background-color: #E6B39A; }
+  .main-content .body-copy .name-container {
+    display: none;
+    margin: 20px 0 10px; }
+  .main-content .body-copy .email-container {
+    margin: 20px 0 10px; }

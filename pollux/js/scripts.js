@@ -13,7 +13,7 @@ $(document).ready(function() {
     'tuk-tuk.jpg',
     'veg-vendor.jpg',
   ];
-  var imagePath = 'url(img/bg/' + images[ Math.floor( Math.random() * images.length ) ] + ")";
+  var imagePath = 'url(assets/img/bg/' + images[ Math.floor( Math.random() * images.length ) ] + ")";
   $("#bg-container").css("background-image", imagePath);
 
   var pageVariant = Math.floor( Math.random() * 3 );
