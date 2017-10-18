@@ -29,7 +29,7 @@ header {
 .main-content {
 
   .body-copy {
-    margin-top: 20vh;
+    margin-top: 10%;
     padding: 0 5vw;
 
     h1 {
@@ -104,5 +104,46 @@ header {
     .email-container {
       margin: 20px 0 10px;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .body-copy {
+    margin-top: 14% !important;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .body-copy {
+    margin-top: 18% !important;
+
+    #submit-form {
+      margin: 20px 0 0 0 !important;
+      width: 25vw !important;
+    }
+  }
+
+  .main-copy-title {
+    font-size: 1.8em !important;
+  }
+
+  .main-copy-text {
+    font-size: 1.1em !important;
+    margin: 3vh 0 2vh;
+  }
+
+  #email-input {
+    width: 100% !important;
+  }
+}
+
+
+@media only screen and (max-width: 571px) {
+  .background-banner {
+    height: 330px;
+  }
+
+  iframe {
+    margin-top: 20px;
   }
 }
