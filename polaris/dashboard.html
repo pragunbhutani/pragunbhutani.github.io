@@ -12,7 +12,7 @@
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Animation library for notifications   -->
     <link href="assets/css/animate.min.css" rel="stylesheet"/>
@@ -32,7 +32,7 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-5.jpg">
 
     <!--
 
@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="notifications.html">
+                    <a href="user.html">
                         <i class="pe-7s-config"></i>
                         <p>Settings</p>
                     </a>
@@ -110,21 +110,83 @@
                     <div class="col-md-12 fix-height">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Signups Started</h4>
-                                <p class="category">Daily performance</p>
+                                <h4 class="title">Signup Funnel</h4>
+                                <p class="category">Suspicious activity detected</p>
                             </div>
                             <div class="content">
                                 <div id="chartSignups" class="ct-chart ct-perfect-fourth"></div>
 
                                 <div class="footer">
                                     <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> First Step
-                                        <i class="fa fa-circle text-danger"></i> Second Step
-                                        <i class="fa fa-circle text-warning"></i> Third Step
+                                        <i class="fa fa-circle text-info"></i> Started Signup
+                                        <i class="fa fa-circle text-danger"></i> Completed Signup
+                                        <!-- <i class="fa fa-circle text-warning"></i> Third Step -->
                                     </div>
                                     <hr>
                                     <div class="stats">
                                         <i class="fa fa-history"></i> Updated 2 mins ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">History of Errors</h4>
+                                <p class="category">Major errors of the previous month</p>
+                            </div>
+                            <div class="content">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Event Name</th>
+                                            <th>Date</th>
+                                            <th>Alert Score</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>postShared</td>
+                                            <td>18 Sep 2018</td>
+                                            <td>26%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>postShared</td>
+                                            <td>13 Sep 2018</td>
+                                            <td>11%</td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>1</td>
+                                            <td>startedSignup</td>
+                                            <td>22 Aug 2018</td>
+                                            <td>76%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>appliedForJob</td>
+                                            <td>17 Aug 2018</td>
+                                            <td>34%</td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>1</td>
+                                            <td>viewedJobPage</td>
+                                            <td>11 Aug 2018</td>
+                                            <td>52%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> History for the last month
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +227,6 @@
 <script src="assets/js/bootstrap-notify.js"></script>
 
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-<script src="assets/js/initChart.js"></script>
 <script type="text/javascript" src="assets/js/initChart.js"></script>
 
 <script type="text/javascript">
@@ -173,13 +234,13 @@
     	demo.initChart();
 	});
 
-    $.notify({
-        icon: 'pe-7s-shield',
-        message: "There seems to be a problem with <b>Started Signups</b> tracker"
-    },{
-        type: 'danger',
-        timer: 4000
-    });
+    // $.notify({
+    //     icon: 'pe-7s-shield',
+    //     message: "There seems to be a problem with <b>Started Signups</b> tracker"
+    // },{
+    //     type: 'danger',
+    //     timer: 4000
+    // });
 </script>
 
 </html>
