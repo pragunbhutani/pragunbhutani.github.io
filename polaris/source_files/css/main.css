@@ -8558,7 +8558,7 @@ span.underline {
     text-decoration: underline; }
   .more:after {
     content: '';
-    background: url(../images/ico-arrow-right.svg) no-repeat;
+    background: url(../img/ico-arrow-right.svg) no-repeat;
     width: 10px;
     height: 10px;
     display: inline-block;
@@ -8864,7 +8864,7 @@ header {
             color: #009ac9; }
           header .nav > li.signup > a:after {
             content: '';
-            background: url(../images/ico-arrow-right.svg) no-repeat;
+            background: url(../img/ico-arrow-right.svg) no-repeat;
             width: 10px;
             height: 10px;
             display: inline-block;
@@ -10533,7 +10533,7 @@ a.upper-link.pull-right {
         width: 14px;
         height: 14px;
         display: inline-block;
-        background: url("../images/ico-arrow-right.svg") no-repeat;
+        background: url("../img/ico-arrow-right.svg") no-repeat;
         margin-left: 15px; }
       .pricing-page .banner .plan-column .btn:hover {
         background: #00a3ca;
