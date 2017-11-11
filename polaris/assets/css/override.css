@@ -1,6 +1,19 @@
 .logo-override {
 	position: absolute;
 	margin-top: -8px;
+	padding-top: 25px;
+}
+
+.logo-image {
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.logo-override h2 {
+	display: inline;
+	color: #48a7cf;
+	line-height: 40px !important;
 }
 
 ul.nav.list-unstyled {
