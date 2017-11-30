@@ -8738,9 +8738,9 @@ header {
         top: 50px; } }
   header .container-fluid {
     position: relative; }
-  header.shadow {
+  /*header.shadow {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
-    background: #fff; }
+    background: #fff; }*/
   .banner-alt header:not(.shadow) .logo a svg,
   .banner-alt header:not(.shadow) .logo a svg * {
     fill: #fff; }

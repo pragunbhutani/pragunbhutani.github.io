@@ -29,39 +29,39 @@
       element['on' + type] = null;
     };
   }
-  
+
   /**
    * Polyfill requestAnimationFrame
-   */ 
+   */
   var lastTime = 0;
   var vendors = ['ms', 'moz', 'webkit', 'o'];
   for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
     window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-    window.cancelAnimationFrame = 
+    window.cancelAnimationFrame =
     window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
   }
- 
-  if (!window.requestAnimationFrame) { 
+
+  if (!window.requestAnimationFrame) {
     window.requestAnimationFrame = function(callback, element) {
       var currTime = new Date().getTime();
       var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-      var id = window.setTimeout(function() { 
-        callback(currTime + timeToCall); 
+      var id = window.setTimeout(function() {
+        callback(currTime + timeToCall);
       }, timeToCall);
       lastTime = currTime + timeToCall;
       return id;
     };
   }
- 
+
   if (!window.cancelAnimationFrame) {
     window.cancelAnimationFrame = function(id) {
       clearTimeout(id);
     };
-  }  
-  
+  }
+
   /** Custom animate function to animate scroll position of element.
    * @author @Piotr Kujawa (piotrkujawa.dev@gmail.com)
-   * @param {object} Object which contains end scroll position.  
+   * @param {object} Object which contains end scroll position.
    * @param {number} Time in milliseconds.
    */
   $.fn.scrollAnimate = function(data,duration) {
@@ -71,28 +71,28 @@
     var frameDuration,diff,step;
     var duration = duration || 400;
     var that = this[0];
-    
+
     diff = currentScrollTop - scrollTo;
-    
+
     var start = +new Date();
     var prev = start;
     var speed = diff / duration;
     var sum = 0;
     var result, excess;
-        
-    var loop = function () {
-      
-      var now = +new Date(); 
 
-      frameDuration = now - prev;   
+    var loop = function () {
+
+      var now = +new Date();
+
+      frameDuration = now - prev;
       step = frameDuration * speed;
       prev = now;
       sum+=step;
- 
+
       /* Checking last frame */
       var absSum = Math.abs(sum);
       var absDiff = Math.abs(diff);
-     
+
       if (absSum > absDiff) {
         excess = absSum - absDiff;
         if (diff > 0) {
@@ -101,14 +101,14 @@
           sum = sum + excess;
         }
       }
-      
-      /* Scrolling element here */ 
+
+      /* Scrolling element here */
       that.scrollTo(0, currentScrollTop - sum);
       if (now - start < duration) {
         requestAnimationFrame(loop);
       }
-    }; 
-    loop();    
+    };
+    loop();
   };
 
   var Page = function () {
@@ -140,13 +140,13 @@
     onScroll: function () {
       var scrollPosition = $(w).scrollTop();
       if (scrollPosition > 2) {
-        $('header').addClass('shadow');
+        $('header').addClass('scrolled');
       } else {
-        $('header').removeClass('shadow');
+        $('header').removeClass('scrolled');
       }
       this.setHeaderTableFixedPosition();
     },
- 
+
     /*
     * Customers page
     **/
@@ -208,7 +208,7 @@
 
       var $itemsContainer = $('.items-container');
       var className = null;
-      
+
       var classes = {
         'all-items': 'all-items',
         'use-cases': 'type-usecase',
@@ -239,7 +239,7 @@
 
       var hashName = _.findKey(classes, function (value) {
         return value === className;
-      }); 
+      });
 
       w.location.hash = className !== 'all-items' ? hashName : '';
     },
@@ -251,14 +251,14 @@
       videoSrc = $target.attr('data-video');
       videoTitle = $target.attr('data-video-title')
 
-      
+
       $modal = $('#modal');
       $content = $modal.find('.modal-content');
       $content.empty();
       $modal.on('hide.bs.modal', function (e) {
         $content.empty();
       });
-      
+
       template = _.template($('#template-video').html());
       data = {
         title: videoTitle || '',
@@ -277,7 +277,7 @@
     embedMarketoForms: function () {
       if (typeof MktoForms2 === 'undefined') {
         return;
-      } 
+      }
 
       var $forms = $('[data-mkto-form]');
       var id;
@@ -285,7 +285,7 @@
       $forms.each(function () {
         id = parseInt($(this).attr('data-mkto-form'), 10);
         MktoForms2.loadForm("//app-ab13.marketo.com", "138-CDN-550", id);
-      }); 
+      });
     },
 
     /*
@@ -320,13 +320,13 @@
       }
 
       offset = $element.offset();
-      if (offset) { 
+      if (offset) {
         $(window).scrollAnimate({
-          scrollTop: offset.top - topMargin  
+          scrollTop: offset.top - topMargin
         }, 400);
-      } 
+      }
     },
-  
+
     /*
     * Main navigation
     **/
