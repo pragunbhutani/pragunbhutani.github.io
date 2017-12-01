@@ -2,6 +2,13 @@ main {
 	padding-top: 0;
 }
 
+header {
+	transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-webkit-transition: background-color 0.3s ease-in-out;
+}
+
 .logo-override {
 	position: absolute;
 	margin-top: -8px;
@@ -94,16 +101,95 @@ header.scrolled ul a {
 }
 
 .section-1 {
-	padding: 60px 0 !important;
+	padding: 40px 0 !important;
+}
+
+.section-1-x {
+	transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	background-color: white;
+	width: 110%;
+	margin-top: -25px;
+	margin-left: -20px;
+	padding-top: 10px;
+	height: 600px;
+}
+
+.section-1-x .content-background {
+	height: 100%;
+	width: 90%;
+	transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	padding: 30px 0 0 50px;
+}
+
+.section-1-x .content-container {
+	margin: 0 auto;
+}
+
+.section-1-x .content-container .feature-section-title {
+	margin-bottom: 20px;
+}
+
+.section-1-x .content-container .feature-tile {
+	padding: 20px 15px;
+}
+
+.section-1-x .content-container .row {
+	margin: 30px 0;
+}
+
+.section-1-x .content-container svg {
+	height: 100px;
+}
+
+.section-1-x .content-container .icon-container {
+	height: 100px;
+	width: 100px;
+	padding-left: 10px;
+	padding-top: 10px;
+	background-color: #EEE;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.section-1-x .content-container .feature-text {
+	height: 100px;
+	max-width: 80%;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 0px 0px 25px;
+}
+
+.section-1-x .content-container .feature-text h3 {
+	font-size: 19px;
+	margin: 0px;
+}
+
+.section-1-x .content-container .feature-text p {
+	margin: 5px 0 0 0;
+	font-size: 17px;
+	line-height: 22px;
 }
 
 .section-2-x {
 	height: 500px;
+	width: 105%;
+	margin-left: -20px;
 	overflow: hidden;
 	background-image: url('../img/data-2.jpg');
 	background-size: 60%;
 	background-repeat: no-repeat;
-	background-position-y: -100px;
+	background-position-y: -200px;
+	transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
 }
 
 .section-2-x .content-background {
@@ -125,10 +211,10 @@ header.scrolled ul a {
     margin-left: 15%;
     color: white;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -webkit-transform: rotate(10deg);
+    transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
 }
 
 .section-2-x .content-container h2 {
