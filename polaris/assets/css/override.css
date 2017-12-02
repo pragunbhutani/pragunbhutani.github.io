@@ -101,7 +101,7 @@ header.scrolled ul a {
 }
 
 .section-1 {
-	padding: 40px 0 !important;
+	padding-top: 50px !important;
 }
 
 .section-1 {
@@ -128,15 +128,16 @@ header.scrolled ul a {
 
 .section-1 .content-container {
 	margin: 0 auto 40px auto;
+	padding: 0 90px;
 }
 
 .section-1 .content-container .feature-section-title {
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .section-1 .content-container .feature-tile {
-	padding: 20px 15px;
+	padding: 10px 20px;
 }
 
 .section-1 .content-container .row {
@@ -185,7 +186,7 @@ header.scrolled ul a {
 	background-image: url('../img/data-2.jpg');
 	background-size: 60%;
 	background-repeat: no-repeat;
-	background-position-y: -200px;
+	background-position-y: 100%;
 	transform: rotate(-2deg);
 	-o-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
@@ -234,7 +235,7 @@ header.scrolled ul a {
 	height: 330px;
 	border: 1px solid #EEE;
 	background-image: url('../img/sherpas.png');
-	background-position: right;
+	background-position: right bottom;
 	background-size: 40%;
 	background-repeat: no-repeat;
 	background-color: #f8f8f8;
@@ -276,6 +277,40 @@ header.scrolled ul a {
 .section-3 .content-container p {
 	font-size: 19px;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 1380px) {
+	.section-1 .content-container {
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.feature-tile {
+		padding: 0px 10px !important;
+	}
+
+	.feature-text {
+		padding-left: 15px !important;
+	}
+
+	section .icon-container {
+		overflow: hidden;
+		width: 60px !important;
+		height: 60px !important;
+		padding-top: 6px !important;
+		padding-left: 6px !important;
+	}
+
+	section .icon-container svg {
+		height: 60px !important;
+	}
+}
+
+@media (max-width: 993px) {
+	.section-3 {
+		padding-top: 70px !important;
+	}
 }
 
 @media (max-width: 768px) {
