@@ -285,7 +285,7 @@ header.scrolled ul a {
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 	.feature-tile {
 		padding: 0px 10px !important;
 	}
