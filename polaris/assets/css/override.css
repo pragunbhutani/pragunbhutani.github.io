@@ -58,6 +58,7 @@ header.scrolled ul a {
 	height: 100vh;
 	min-height: 600px;
 	background-image: url('../img/data-graph-finger.jpg');
+	background-position-x: 60% !important;
 	background-size: cover;
 	background-position: center;
 	box-shadow: 0px 0px 2px #000;
@@ -312,6 +313,14 @@ header.scrolled ul a {
 }
 
 @media (max-width: 993px) {
+	.section-1 .feature-tile h3 {
+		font-size: 17px !important;
+	}
+
+	.section-1 .feature-tile p {
+		font-size: 15px !important;
+	}
+
 	.section-2 .content-container {
 		margin-top: 35%;
 	}
@@ -321,10 +330,24 @@ header.scrolled ul a {
 	}
 }
 
+@media (max-width: 835px) {
+	.feature-tile {
+		text-align: center;
+	}
+}
+
 @media (max-width: 768px) {
 	.logo-override {
 		padding-top: 5px !important;
 		margin-top: 0px !important;
+	}
+
+	.section-1 .row {
+		margin: 0px !important;
+	}
+
+	.feature-tile {
+		text-align: left;
 	}
 
 	.section-2 {
@@ -344,13 +367,18 @@ header.scrolled ul a {
 
 @media (max-width: 550px) {
 	.section-2 {
+		height: 300px;
 		width: 110%;
 		background-size: 100%;
 	}
 
+	.section-2 .content-bg {
+		top: -50px;
+	}
+
 	.section-2 .content-container {
-		margin-top: 40%;
 		padding-right: 30px;
+		margin-top: 25%;
 	}
 
 	.section-2 .content-container h2 {
@@ -359,5 +387,17 @@ header.scrolled ul a {
 
 	.section-2 .content-container p {
 		font-size: 14px;
+	}
+}
+
+@media (max-width: 500px) {
+	.section-1 .content-container {
+		padding: 0px !important;
+	}
+}
+
+@media (max-width: 430px) {
+	.section-1 .feature-tile {
+		margin: 5px 0 !important;
 	}
 }
