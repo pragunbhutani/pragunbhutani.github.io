@@ -224,7 +224,7 @@ header.scrolled ul a {
 
 .section-3 {
 	height: auto;
-	padding: 100px;
+	margin-top: 10px !important;
 }
 
 .section-3 .feature-section-title {
@@ -305,9 +305,17 @@ header.scrolled ul a {
 	section .icon-container svg {
 		height: 60px !important;
 	}
+
+	.section-2 .content-bg {
+		width: 70%;
+	}
 }
 
 @media (max-width: 993px) {
+	.section-2 .content-container {
+		margin-top: 35%;
+	}
+
 	.section-3 {
 		padding-top: 70px !important;
 	}
@@ -317,5 +325,39 @@ header.scrolled ul a {
 	.logo-override {
 		padding-top: 5px !important;
 		margin-top: 0px !important;
+	}
+
+	.section-2 {
+		height: 400px;
+	}
+}
+
+@media (max-width: 620px) {
+	.section-2 {
+		background-size: 70%;
+	}
+
+	.section-2 .content-bg {
+		width: 80%;
+	}
+}
+
+@media (max-width: 550px) {
+	.section-2 {
+		width: 110%;
+		background-size: 100%;
+	}
+
+	.section-2 .content-container {
+		margin-top: 40%;
+		padding-right: 30px;
+	}
+
+	.section-2 .content-container h2 {
+		font-size: 18px;
+	}
+
+	.section-2 .content-container p {
+		font-size: 14px;
 	}
 }
