@@ -64,7 +64,7 @@ header.scrolled ul a {
 	min-height: 550px;
 	height: auto;
 	width: 100%;
-	padding: 70px 0 90px;
+	padding: 70px 0 100px;
 	background: rgba(0, 82, 140, 0.8);
 	background: linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
 	background: -o-linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
@@ -107,21 +107,23 @@ header.scrolled ul a {
 }
 
 .section-0 .pricing-box.focus {
-	margin-top: -30px;
+	margin-top: -45px;
 	border-radius: 3px;
 }
 
 .section-0 .pricing-box.focus .content {
-	height: 460px;
+	height: auto;
 }
 
 .section-0 .pricing-box .content {
 	height: 400px;
+	padding-bottom: 20px;
 }
 
 .section-0 .pricing-box .content h2 {
 	font-weight: 300;
 	margin-bottom: 0px !important;
+	text-shadow: 0px 0px 5px #d3e6ef, 0px 0px 10px #d3e6ef;
 }
 
 .section-0 .pricing-box .content h4 {
@@ -139,4 +141,52 @@ header.scrolled ul a {
 
 .section-0 .pricing-box table td {
 	padding: 0px 20px;
+}
+
+.section-0 .pricing-box .btn {
+	background-color: #cee0e8;
+	color: #397592;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.section-0 .pricing-box .btn:hover {
+	background-color: #d3e6ef;
+	color: #47a8d0;
+}
+
+.section-1 {
+	height: auto;
+	min-height: 300px;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.section-1 .container-bg {
+	height: auto;
+	min-height: 200px;
+	background-color: white;
+	margin-top: -30px;
+	margin-left: -20px;
+	transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+}
+
+.section-1 .content-container {
+	transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	padding-top: 70px;
+	padding-left: 50px;
+}
+
+.section-1 h3 {
+	font-weight: 300;
+}
+
+.section-1 button {
+	margin: 20px 0;
 }
