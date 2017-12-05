@@ -9,6 +9,10 @@ header {
 	-webkit-transition: background-color 0.3s ease-in-out;
 }
 
+.nav-wrapper.open ul a {
+	color: #00a7cf !important;
+}
+
 .logo-override {
 	position: absolute;
 	margin-top: -8px;
@@ -196,4 +200,36 @@ header.scrolled ul a {
 
 .section-1 button {
 	margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+
+	.section-0 .banner-text {
+		margin-top: 0px;
+	}
+
+	.section-0 .pricing-table {
+		margin-top: 50px;
+	}
+
+	.section-0 .pricing-box {
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+
+	.section-0 .pricing-box h2 {
+		margin-top: 0px;
+	}
+
+	.section-0 .pricing-box.focus {
+		margin-top: 0px;
+	}
+
+	.section-0 .container-bg {
+		padding-bottom: 80px;
+	}
+
+	.section-1 .content-container {
+		padding-top: 50px;
+	}
 }
