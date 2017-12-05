@@ -23,8 +23,15 @@ header {
 
 .logo-override h2 {
 	display: inline;
-	color: #48a7cf;
+	color: white;
 	line-height: 40px !important;
+	font-weight: 300;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.scrolled .logo-override h2 {
+	color: #48a7cf;
+	text-shadow: none;
 }
 
 ul.nav.list-unstyled {

@@ -23,8 +23,15 @@ header {
 
 .logo-override h2 {
 	display: inline;
-	color: #48a7cf;
+	color: white;
 	line-height: 40px !important;
+	font-weight: 300;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.scrolled .logo-override h2 {
+	color: #48a7cf;
+	text-shadow: none;
 }
 
 ul.nav.list-unstyled {
@@ -64,7 +71,7 @@ header.scrolled ul a {
 	min-height: 550px;
 	height: auto;
 	width: 100%;
-	padding: 70px 0 100px;
+	padding: 70px 0 110px;
 	background: rgba(0, 82, 140, 0.8);
 	background: linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
 	background: -o-linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
