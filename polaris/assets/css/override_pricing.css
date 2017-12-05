@@ -1,0 +1,142 @@
+main {
+	padding-top: 0;
+}
+
+header {
+	transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-webkit-transition: background-color 0.3s ease-in-out;
+}
+
+.logo-override {
+	position: absolute;
+	margin-top: -8px;
+	padding-top: 25px;
+}
+
+.logo-image {
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.logo-override h2 {
+	display: inline;
+	color: #48a7cf;
+	line-height: 40px !important;
+}
+
+ul.nav.list-unstyled {
+	padding-bottom: 16px;
+}
+
+header ul a {
+	color: white !important;
+}
+
+header.scrolled {
+	background: white;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+header.scrolled ul a {
+	color: black !important;
+}
+
+#footer {
+	padding-top: 0px !important;
+}
+
+.footer-bottom {
+	border-top: none !important;
+	margin-top: 21px !important;
+	padding-top: 0px !important;
+}
+
+.section-0 {
+	min-height: 100vh;
+	overflow: hidden;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.section-0 .container-bg {
+	min-height: 550px;
+	height: auto;
+	width: 100%;
+	padding: 70px 0 90px;
+	background: rgba(0, 82, 140, 0.8);
+	background: linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
+	background: -o-linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
+	background: -moz-linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
+	background: -webkit-linear-gradient(left, rgba(40, 99, 123, 1), rgba(40, 99, 123, 0.8), rgba(40, 99, 123, 0.6), rgba(40, 99, 123, 0.4));
+}
+
+.section-0 .container-bg .content-container {
+	padding-top: 40px;
+}
+
+.section-0 .banner-text {
+	margin-top: 30px;
+}
+
+.section-0 .banner-text h1 {
+	color: #fff;
+	font-weight: 300;
+	text-shadow: 0px 0px 5px black, 0px 0px 25px rgba(0, 0, 0, 0.6);
+}
+
+.section-0 .banner-text h3 {
+	color: #fff;
+	font-weight: 200;
+	text-shadow: 0px 0px 5px black, 0px 0px 25px rgba(0, 0, 0, 1);
+}
+
+.section-0 .pricing-table {
+	margin-top: 110px;
+}
+
+.section-0 .pricing-box {
+	background-color: #eee;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.section-0 .pricing-box.first {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.section-0 .pricing-box.focus {
+	margin-top: -30px;
+	border-radius: 3px;
+}
+
+.section-0 .pricing-box.focus .content {
+	height: 460px;
+}
+
+.section-0 .pricing-box .content {
+	height: 400px;
+}
+
+.section-0 .pricing-box .content h2 {
+	font-weight: 300;
+	margin-bottom: 0px !important;
+}
+
+.section-0 .pricing-box .content h4 {
+	margin-top: 6px;
+}
+
+.section-0 .pricing-box table {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.section-0 .pricing-box table tr {
+	height: 45px;
+}
+
+.section-0 .pricing-box table td {
+	padding: 0px 20px;
+}
