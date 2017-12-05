@@ -208,6 +208,10 @@ header.scrolled ul a {
 		margin-top: 0px;
 	}
 
+	.section-o .banner-text h3 {
+		font-weight: 300;
+	}
+
 	.section-0 .pricing-table {
 		margin-top: 50px;
 	}
@@ -222,7 +226,7 @@ header.scrolled ul a {
 	}
 
 	.section-0 .pricing-box.focus {
-		margin-top: 0px;
+		margin-top: 20px;
 	}
 
 	.section-0 .container-bg {
