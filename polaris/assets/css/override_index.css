@@ -241,28 +241,40 @@ header.scrolled ul a {
 }
 
 .section-3 {
-	height: auto;
-	margin-top: 10px !important;
+	padding-top: 70px !important;
 }
 
-.section-3 .feature-section-title {
+.section-3 iframe {}
+
+.section-4 {
+	height: auto;
+	margin-top: 10px !important;
+	background-color: #28627b;
+}
+
+.section-4 h2 {
+	margin-bottom: 50px !important;
+	color: white;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.section-4 .feature-section-title {
 	margin-top: 0px;
 }
 
-.section-3 .testimonial-container {
+.section-4 .testimonial-container {
 	height: 330px;
-	border: 1px solid #EEE;
-	background-image: url('../img/sherpas.png');
-	background-position: right bottom;
-	background-size: 40%;
+	border: 4px solid #EEE;
+	background-image: url('../img/side.png');
+	background-position-x: calc(100% - 20px);
+	background-position-y: -30px;
 	background-repeat: no-repeat;
-	background-color: #f8f8f8;
+	background-color: #3681ee;
 	overflow: hidden;
-	box-shadow: 0px 0px 3px #EEE;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
-.section-3 .content-bg {
+.section-4 .content-bg {
 	height: 140%;
 	width: 65%;
 	transform: rotate(-10deg);
@@ -277,7 +289,7 @@ header.scrolled ul a {
 	color: #4d4d55;
 }
 
-.section-3 .content-container {
+.section-4 .content-container {
 	transform: rotate(10deg);
 	-o-transform: rotate(10deg);
 	-moz-transform: rotate(10deg);
@@ -287,12 +299,12 @@ header.scrolled ul a {
 	text-align: left;
 }
 
-.section-3 .content-container h3 {
+.section-4 .content-container h3 {
 	font-size: 24px;
 	margin-bottom: 20px;
 }
 
-.section-3 .content-container p {
+.section-4 .content-container p {
 	font-size: 19px;
 	margin-bottom: 10px;
 }
@@ -338,7 +350,7 @@ header.scrolled ul a {
 		margin-top: 35%;
 	}
 
-	.section-3 {
+	.section-4 {
 		padding-top: 70px !important;
 	}
 }
@@ -363,7 +375,7 @@ header.scrolled ul a {
 		height: 400px;
 	}
 
-	.section-3 .content-bg {
+	.section-4 .content-bg {
 		transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -371,7 +383,7 @@ header.scrolled ul a {
 		width: 70%;
 	}
 
-	.section-3 .content-container {
+	.section-4 .content-container {
 		transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -380,12 +392,12 @@ header.scrolled ul a {
 		padding-right: 20px;
 	}
 
-	.section-3 .content-container h3 {
+	.section-4 .content-container h3 {
 		font-size: 20px;
 		margin: 10px 0;
 	}
 
-	.section-3 .content-container p {
+	.section-4 .content-container p {
 		font-size: 16px;
 	}
 }
@@ -399,7 +411,7 @@ header.scrolled ul a {
 		width: 80%;
 	}
 
-	.section-3 .content-bg {
+	.section-4 .content-bg {
 		width: 75%;
 	}
 }
