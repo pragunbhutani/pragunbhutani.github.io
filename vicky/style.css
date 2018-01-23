@@ -1,0 +1,11 @@
+body {
+	text-align: center;
+}
+
+.name-container h1 {
+	font-size: 36px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #4EA5FF;
+}
+
